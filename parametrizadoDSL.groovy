@@ -1,4 +1,4 @@
-job('DigitalOcean-job-DSL GITHUB.....') {
+job('DigitalOcean-job-DSL-GITHUB') {
   description('Job DSL DigitalOcean')
   scm {
     git('https://github.com/Duvis07/jenkins.job.parametrizado.git', 'main') { node ->
