@@ -1,5 +1,5 @@
 job('DigitalOcean-job-DSL') {
-  description('Job DSL de ejemplo para el curso de Jenkins')
+  description('Job DSL DigitalOcean')
   scm {
     git('https://github.com/Duvis07/jenkins.job.parametrizado.git', 'main') { node ->
       node / gitConfigName('Duvis07')
@@ -7,7 +7,7 @@ job('DigitalOcean-job-DSL') {
     }
   }
   parameters {
-    stringParam('nombre', defaultValue = 'Julian', description = 'Parametro de cadena para el Job Booleano')
+    stringParam('nombre', defaultValue = 'Duvan', description = 'Parametro de cadena para el Job Booleano')
     choiceParam('planeta', ['Mercurio', 'Venus', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
     booleanParam('agente', false)
   }
